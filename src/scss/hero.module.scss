@@ -1,0 +1,34 @@
+@use "./modules/variables/variables";
+@use "./modules/mixin/mixin";
+// @use "./modules/utility/utility";
+// @use "./modules/foundation/foundation";
+
+.text {
+  padding-top: calc(var(--display) * 0.5);
+  padding-bottom: calc(var(--display) * 0.7);
+}
+
+.title {
+  font-size: var(--display);
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.subtitle {
+  font-size: var(--small-heading2);
+}
+
+.flexContainer {
+  composes: sideBySideCenter from "utils.module.scss";
+}
+
+.image {
+  width: mixin.myClamp(384, 576, 768, 1152);
+  max-width: calc(100vw - 8vw);
+}
+
+@media (min-width: 768px) {
+  .image {
+    width: mixin.myClamp(384, 576, 768, 1152);
+  }
+}

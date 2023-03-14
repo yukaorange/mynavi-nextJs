@@ -1,0 +1,1 @@
+{"version":3,"sources":["two-column.module.scss","two-column.module.css"],"names":[],"mappings":"AAGA;EACE,6CAAA;EACA,oBAAA;EACA,yCAAA;ACFF;;ADKA;EACE;IACE,gBAAA;ECFF;EDIA;IACE,gBAAA;IACA,wBAAA;IAAA,gBAAA;IACA,SAAA;IACA,sBAAA;ECFF;EDKA;IACE,iBAAA;ECHF;EDKA;IACE,0BAAA;IAAA,uBAAA;IAAA,kBAAA;IACA,iBAAA;IACA,gBAAA;IACA,kBAAA;ECHF;AACF","file":"two-column.module.css"}

@@ -1,5 +1,18 @@
-import '@/styles/globals.css'
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import Layout from "@/components/layout";
+import styles from "@/scss/style.scss";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+config.autoAddCss = false;
+
+function MyApp({ Component, pageProps }) {
+  const getLayout =
+    Component.getLayout ||
+    ((page) => {
+      console.log(page)
+      return page;
+    });
+  return <Layout>{getLayout(<Component {...pageProps} />)}</Layout>;
 }
+
+export default MyApp;

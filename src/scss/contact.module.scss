@@ -1,0 +1,10 @@
+@use "./modules/variables/variables";
+@use "./modules/mixin/mixin";
+
+.stack > * + * {
+  margin-top: var(--stack-space, 1em);
+}
+
+.heading {
+  font-size: var(--body);
+}

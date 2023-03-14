@@ -1,0 +1,30 @@
+.flexContainer {
+  composes: sideBySide from "utils.module.scss";
+  gap: var(--space-md);
+  margin: var(--space-md) 0 var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .main {
+    max-width: 768px;
+  }
+  .sidebar {
+    max-width: 240px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+    align-self: flex-start;
+  }
+  .sidebar * {
+    text-align: right;
+  }
+  .sidebar :is(div, ul) {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    place-items: end;
+    place-content: end;
+  }
+}
+/*# sourceMappingURL=two-column.module.css.map */

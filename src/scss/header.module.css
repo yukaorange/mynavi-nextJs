@@ -1,0 +1,4 @@
+.flexContainer {
+  composes: spaceBetween from "utils.module.scss";
+}
+/*# sourceMappingURL=header.module.css.map */

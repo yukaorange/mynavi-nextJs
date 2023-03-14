@@ -1,0 +1,8 @@
+.list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 1.5em;
+  font-size: var(--icon-size, 24px);
+}
+/*# sourceMappingURL=social.module.css.map */

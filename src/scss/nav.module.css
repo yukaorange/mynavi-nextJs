@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@media (min-width: 768px) {
+  .button {
+    display: none;
+  }
+  .list {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .button {
+    all: unset;
+    outline: revert;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    z-index: 200;
+  }
+  .close .button {
+    color: var(--gray-75);
+  }
+  .open .button {
+    color: var(--white);
+  }
+  .button {
+    display: grid;
+    place-items: center;
+  }
+  .button::before,
+.button::after,
+.button,
+.bar {
+    content: "";
+    display: block;
+    grid-area: 1/1;
+    width: 32px;
+    height: 1px;
+    background-color: currentColor;
+    transition: transform 0.4s;
+  }
+  .close .button::before {
+    transform: translateY(-8px);
+  }
+  .close .button::after {
+    transform: translateY(8px);
+  }
+  .open .button::before {
+    transform: rotate(45deg);
+  }
+  .open .button::after {
+    transform: rotate(-45deg);
+  }
+  .open .button .bar {
+    transform: scale(0);
+    display: none;
+  }
+  .list {
+    position: fixed;
+    inset: 0 -100% 0 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: transform 0.4s;
+  }
+  .list a {
+    color: var(--white);
+  }
+  .list {
+    display: grid;
+    gap: 40px;
+    place-content: center;
+    text-align: center;
+  }
+  .open .list {
+    transform: translateX(-100%);
+  }
+}
+@media (hover: hover) {
+  .list a {
+    /* 非タッチ端末を想定した装飾を記載（&:hover使用する） */
+  }
+  .list a:hover {
+    color: var(--accent);
+  }
+}
+@media (hover: none) {
+  .list a {
+    /* hoverが使えないタッチ端末を想定した装飾を記載（&:active使用する） */
+  }
+  .list a:active {
+    color: var(--accent);
+  }
+}
+/*# sourceMappingURL=nav.module.css.map */

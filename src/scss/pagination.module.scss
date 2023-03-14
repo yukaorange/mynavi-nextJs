@@ -1,0 +1,19 @@
+@use "./modules/variables/variables";
+@use "./modules/mixin/mixin";
+
+.flexContainer {
+  composes: spaceBetween from "utils.module.scss";
+  display: flex;
+  margin: var(--space-lg) 0;
+  gap: 1em;
+}
+
+.next {
+  margin-left: auto;
+}
+
+.iconText {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}

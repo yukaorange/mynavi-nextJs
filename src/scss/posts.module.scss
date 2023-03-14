@@ -1,0 +1,24 @@
+@use "./modules/variables/variables";
+@use "./modules/mixin/mixin";
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-jump);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}
+
+.post h2{
+  margin-top: 0.5em;
+  font-size: var(--small-heading3);
+  font-weight: 400;
+}
+
+.post{
+  figure{
+    position: relative;
+    z-index: 0;
+    aspect-ratio: 16/9;
+  }
+}

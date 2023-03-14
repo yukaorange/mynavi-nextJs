@@ -1,0 +1,10 @@
+@use "./modules/variables/variables";
+@use "./modules/mixin/mixin";
+
+.list{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 1.5em;
+  font-size: var(--icon-size,24px);
+}

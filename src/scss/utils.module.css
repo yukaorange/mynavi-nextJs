@@ -1,0 +1,31 @@
+.spaceBetween {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sideBySide {
+  display: grid;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .sideBySide {
+    justify-items: center;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+}
+.sideBySideCenter {
+  composes: sideBySide;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .sideBySideCenter {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=utils.module.css.map */
