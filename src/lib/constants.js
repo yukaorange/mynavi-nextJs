@@ -1,7 +1,7 @@
 export const siteMeta = {
   siteTitle: "CUBE",
   siteDesc: "アウトプットしていくサイト",
-  siteUrl: "https://vercel.com/yukaorange",
+  siteUrl: "https://www.yukaorange.online/",
   siteLang: "ja",
   siteLocate: "ja_JP",
   siteType: "website",
